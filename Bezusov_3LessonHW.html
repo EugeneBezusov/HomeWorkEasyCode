@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1)
+            //  var a = 'block';
+            //     if (a === 'block') { 
+            //             console.log('block')
+            //         } else if (a === 'none') {
+            //             console.log('none')
+            //         } else if (a === 'inline') {
+            //             console.log('inline')
+            //         } else {
+            //             console.log('other')
+            // }    
+    // ReWriteHere to the Switch
+            // var a = 'none';
+            // switch(a) {
+            //     case 'block':
+            //             console.log('block');
+            //         break;
+            //     case 'none':
+            //         console.log('none');
+            //         break;
+            //     case 'inline':
+            //         console.log('inline');
+            //         break;
+            //     default: console.log('other');
+            // }
+    // 2) переписать в тернарные 
+        // 1)
+                // var block = 'hidden';
+                // block = 'hidden' 
+                //     ? block = 'visible'
+                //     : block = 'hidden';
+                
+        // 2)
+                // var zero = 0;
+                // zero == 0 
+                // ? zero = 1 
+                // : zero <= 0 
+                // ? zero = 'less then zerro' 
+                // : zero = zero * 10 ;
+
+                // console.log(zero)
+
+    
+    //arrey 
+    // 1)
+            // var string = 'i am in the easycode';
+            // var newstring = '';
+            //     for(let i=0; i<string.length; i++ ) {
+            //         if(i == 0 || string[i-1] == ' '){
+            //             newstring = newstring + string[i].toUpperCase();
+            //         }else{
+            //             newstring = newstring + string[i];
+            //         }
+
+            //     }
+            // console.log(newstring);
+    // 2)
+            // var str = 'tseb eht ma i';
+            // var reverse = '';
+            // for(i = str.length - 1; i >= 0; i--){
+            //         reverse += str.charAt(i);
+            // }
+            // console.log(reverse);
+    // 3)
+                // var a = 10;
+                // var fact = 1;
+                // for(let i = 2; i<=a; i++){
+                //    fact = fact * i;
+                // }
+                // alert(fact);
+    // 4)
+            // var string = 'JavaScript is a pretty good language';
+            // var newstring = '';
+            // for(let i=0; i<string.length; i++ ) {
+            //     if(string[i] == ' '){
+            //             continue;
+            //         }
+            //     if(i == 0 || string[i-1] == ' '){
+            //         newstring = newstring + string[i].toUpperCase();
+            //     }
+            //     else{
+            //         newstring = newstring + string[i];
+            //     }
+            // }
+            // console.log(newstring)
+    // 5)
+        // var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+        // var even = ''
+        // for(let i = 0; i<number.length; i++){
+        //     if(number[i] % 2 == 0 ){
+        //         even = even + ' ' + number[i];
+        //     }
+        // }
+        // console.log(even);
+    // 6)
+        // let list = {
+        //     name: 'denis', 
+        //     work: 'easycode', 
+        //     age: 29
+        // }
+        // let newList = {};
+        // for (var prop in list) {
+        // if(typeof(list[prop]) == 'string') {
+        //     newList[prop] = list[prop].toUpperCase();
+        //     } else{
+        //         newList[prop] = list[prop];
+        //     }
+        // }
+        // console.log(newList);
+    </script>
+
+</body>
+</html>

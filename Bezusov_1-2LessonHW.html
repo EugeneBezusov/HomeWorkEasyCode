@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <!-- // var i = 0;
+        // do {
+        // document.write( i++ + '<br>');
+        // } while (i < 3);
+
+        // var space =  '<br>'
+        // document.write(space)
+
+        // var a = 0;
+        // do {
+        // document.write(++a + '<br>');
+        // } while (a < 3); -->
+
+
+
+
+    <script>
+// Lesson 1 work (string's)
+        var title = 'String home work:'
+        document.write(title + '<br>');
+
+        var string = 'some test string';
+// 1)
+        document.write(string[0] + '<br>');
+        document.write(string[string.length-1] + '<br>');
+// 2)
+        document.write(string[0].toUpperCase() + ' ' + string[string.length-1].toUpperCase() + '<br>');
+// 3)
+        document.write(string.indexOf('string')+ '<br>');
+// 4)
+        document.write(string.lastIndexOf(' ')+ '<br>');
+        document.write(string.indexOf(' ',5)+ '<br>');
+// 5)
+        document.write(string.substr(5,[ 4]) + '<br>');
+// 6)
+        document.write(string.slice(5,9) + '<br>');
+// 7)
+        document.write(string.substring(0, string.length - 6) + '<br>');
+        
+// 8)
+        var a = 20;
+        var b = 16;
+        document.write( a.toString() + b.toString() + '<br>');
+
+
+        var title2 = 'Number home work:'
+        document.write('<br>' + title2 + '<br>');
+
+// Lesson 1 home work (Numbers)
+
+// 1)
+        var number = Math.PI;
+        document.write(number.toFixed(2) + '<br>');
+// 2)
+        document.write(Math.max(15, 11, 16, 12, 51, 12, 13, 51) + '<br>');
+        document.write(Math.min(15, 11, 16, 12, 51, 12, 13, 51) + '<br>');
+// 3)
+
+    // a)    
+        var rendom = Math.random() * (100 - 0) + 0;
+        document.write(rendom.toFixed(2) + '<br>');
+    // b) 
+        var rendom = Math.random() * 100;
+        document.write(rendom + '<br>');
+// 4) 
+        var x = 0.6;
+        var y = 0.7;
+        var sum = x + y;
+        document.write(sum.toFixed(2) + '<br>') ;
+// 5)
+        var price = 100;
+        var strPrice = price.toString();
+        document.write(strPrice + '$' + '<br>');
+
+// Lesson 2 home work (string's)
+
+//// 1) object 
+        var phone = {
+        product: 'iphone',
+        };
+
+        phone.price = 1000;
+        phone.details = {
+                color:'red',
+                model: '6s'
+        };
+///// 2)
+
+        //let s = 0||'string'; /* Тут равно - string так как первый елемент Fasle */
+        //let s = 1 && 'string'; /* Равно string так как первый елемент Тру и оно смотрит дальше*/
+        //let s = null || 25; /* Равно 25 так как первое значение False и смотрит дальше*/
+        //let s = null && 25; /* так как первое значение False оно падает*/
+        //let s = null || 0 || 35; /* так как единственное значение true - 35 выводит его*/
+        //let a = null && 0 && 35; /* так как первое значение False оно падает*/
+
+// 3)
+
+        // 12 + 14 + '12' /* =2612 так как первые два числа щитаються и плюсуется стринга в конце */
+        // 3 + 2 - '1' /* =4 так как один минус (математическая операцыя) это не конкатинацыя оно превращает стрингу в номер*/
+        // '3' + 2 - 1 /* 31 тринга плюс 1*/
+        // true + 2 /* =3 так как тру булинг = 1*/
+        // +'10' + 1 /* =11 так как у тринги есть дополнительный плюс превращает в номер */
+        //undefined + 2 null + 5 /* ошыбка*/
+        // true + undefined /* =NAN true + undefined */
+
+// if else (задачи)
+        // 1)
+                // var block = 'hidden';
+                // if(block = 'hidden'){
+                //         block = 'visible';
+                // }else{
+                //         block = 'hidden';
+                // }
+        // 2)
+                // var zero = 1;
+                // if(zero == 0){
+                //         zero = 1;
+                // } else if (zero <= 0){
+                //         zero = 'less then zerro';
+                // } else if (zero >= 0){
+                //         zero = zero * 10;
+                // }
+        // 3)
+                // let car = { 
+                //         name: 'Lexus',
+                //         age: 10,
+                //         create: 2008,
+                //         needRepair: false
+                // }
+                // if (car.age >= 5){
+                //         alert('Need repair');
+                //         car.needRepair = true
+                // } else{
+                //         car.needRepair = false
+                // }
+        // 4)
+                // let item = { name: 'Intel core i7',
+                //         price: '100$',
+                //         discount: '15%' 
+                // }
+                // if (item.discount){
+                //         item.priceWithDiscount = parseInt(item.price) - (parseInt(item.discount) * parseInt(item.price) / 100) + '$' ;
+                //         alert(item.priceWithDiscount);
+                // } else{
+                //         alert(price);
+                // }
+        // 5)
+                // let min = 10;
+                // let max = 20;
+                // let product = { 
+                //         name: 'apple', 
+                //         price: '20$'
+                // };
+                // if (parseInt(product.price) >= min && parseInt(product.price) <= max){
+                //         console.log(product.name)
+                // }else{
+                //         console.log("We don't have this product") 
+                // }
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
